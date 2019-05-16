@@ -1,0 +1,92 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-image: url("obrazy/tlo-glowne.jpg");
+    background-attachment: fixed;
+}
+#logo{
+
+    width:1004px;
+    margin:0 auto;
+
+}
+#Baner{
+    position: relative;
+    margin-top: 15px;
+    background-image: url("obrazy/tlo-banera.png") ;
+    width:944px;
+    height: 113px;
+}
+img.obrazek{
+    position: absolute;
+    border:0;
+    left: 0;
+    top:0;
+
+}
+img.napis{
+    position: absolute;
+    border:0;
+    right:0;
+}
+a {
+    font:14px Arial, Helvetica, sans-serif;
+    color:#2E9EC3;
+    text-decoration:none;
+    line-height:1.3em;
+    display:block;
+    background:#000000;
+    padding:7px 15px;
+    margin:0 1px 0 0;
+}
+ul
+{
+
+    list-style:none;/*brak kropek kwadratow itd*/
+    margin:0;
+    padding:0;
+
+}
+.menu-lvl-1 {
+
+}
+.lvl-1 {
+    width:189px;
+    top:80px;
+    position:relative;
+    float:left;/*menu w poziome*/
+    left:296px;
+    top: 1px;
+
+}
+
+.lvl-1:hover a {
+    text-decoration:underline;
+    color:#598ac6;
+    background:#000000;
+}
+.menu-lvl-2 {
+    position:absolute;/*pozycja absolutna zeby menu nie rozjechalo sie*/
+    width:188px;
+    display:none; /*ukrycie poziomu drugiego menu*/
+    background:#000000;
+}
+.lvl-2 {
+    position:relative;
+    margin-top:1px;
+}
+.lvl-1:hover .menu-lvl-2 {
+    display:block;
+}/*nastepny poziom odkrywany po najechaniu kursorem*/
+#content{
+    width:944px;
+
+}
+#gora{
+    width:944px;
+}
+#srodek{
+    width:944px;
+}
